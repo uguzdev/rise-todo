@@ -1,12 +1,12 @@
-import { COLORS } from "../commons/constant";
+import { COLORS, PRIORITY } from "../commons/constant";
 
 export const getPriorityText = (priority: number) => {
   switch (priority) {
-    case 0:
+    case PRIORITY.URGENT:
       return "Urgent";
-    case 1:
+    case PRIORITY.REGULAR:
       return "Regular";
-    case 2:
+    case PRIORITY.TRIVIAL:
       return "Trivial";
     default:
       break;
@@ -15,11 +15,11 @@ export const getPriorityText = (priority: number) => {
 
 export const getPriorityColor = (priority: number) => {
   switch (priority) {
-    case 0:
+    case PRIORITY.URGENT:
       return COLORS.urgentPink;
-    case 1:
+    case PRIORITY.REGULAR:
       return COLORS.regularYellow;
-    case 2:
+    case PRIORITY.TRIVIAL:
       return COLORS.buttonBlue;
     default:
       break;

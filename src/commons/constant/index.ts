@@ -12,3 +12,9 @@ export const PRIORITY_OPTIONS = [
   { label: "Urgent", value: 0 },
   { label: "Regular", value: 1 },
 ];
+
+export const PRIORITY = {
+  URGENT: 0,
+  REGULAR: 1,
+  TRIVIAL: 2,
+};
